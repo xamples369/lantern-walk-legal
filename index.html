@@ -27,28 +27,39 @@
 <div class="wrap">
 
   <h1>Lantern Walk — Zásady ochrany súkromia</h1>
-  <p class="sub">Živá tapeta pre Android · Naposledy aktualizované: 7. september 2026</p>
+  <p class="sub">Živá tapeta pre Android a Windows · Naposledy aktualizované: 6. október 2026</p>
 
-  <p>Lantern Walk je živá tapeta. Nezbiera, neukladá ani nezdieľa žiadne osobné údaje.
-  Nemá používateľské účty, reklamy ani analytické nástroje, ktoré by vás sledovali.</p>
+  <p>Lantern Walk je živá tapeta. Nezbiera o vás žiadne osobné údaje, nemá používateľské účty, reklamy ani analytické nástroje,
+  ktoré by vás sledovali. Jediný odchádzajúci prenos je voliteľný dopyt na predpoveď počasia (MET Norway) so súradnicami
+  <em>zvoleného mesta</em> (nie vašej polohy) — podrobnosti nižšie.</p>
 
   <h2>Aké údaje aplikácia spracúva</h2>
   <ul>
     <li><strong>Žiadne osobné údaje.</strong> Aplikácia od vás nevyžaduje meno, e-mail, polohu zo systému ani prihlásenie.</li>
-    <li><strong>Mesto pre počasie (voliteľné).</strong> Ak si v nastaveniach zadáte názov mesta, aplikácia ho pošle službe Open‑Meteo, aby preň získala aktuálnu predpoveď a scéna reagovala na skutočné počasie. Názov mesta sa uloží len lokálne vo vašom zariadení; ak pole nevyplníte, použije sa predvolené mesto z tapety.</li>
-    <li><strong>Nastavenia a „záhradka".</strong> Vaše nastavenia a rastliny, ktoré vám v scéne narastú, sa ukladajú výhradne lokálne vo vašom zariadení (nastavenia aplikácie a lokálne úložisko WebView). Nikdy neopúšťajú zariadenie a nie sú prístupné nikomu inému.</li>
+    <li><strong>Mesto pre počasie.</strong> Aby scéna reagovala na skutočné počasie, aplikácia si názov mesta z nastavení (predvolene „Bratislava“, môžete ho zmeniť) vyhľadá <em>priamo vo vašom telefóne</em> v zabalenom zozname miest a službe MET Norway pošle len súradnice <em>tohto mesta</em> zaokrúhlené na 0,01° (~1 km) — názov mesta ani polohu vášho zariadenia nikam neodosiela. Živé počasie môžete v nastaveniach vypnúť; potom aplikácia na internet nepristupuje vôbec.</li>
+    <li><strong>Nastavenia a stav scény.</strong> Vaše nastavenia, presety, obľúbené nastavenia, počítadlo a to, čo sa v scéne nahromadí (rastliny, herbár, Zbierka nálezov, kôpka dreva a podobne), sa ukladajú výhradne v súkromnom úložisku aplikácie vo vašom zariadení. Nastavenia (vrátane mesta pre počasie), presety a stav tapety sa môžu zálohovať a prenášať na nový telefón cez zálohu Google (chránenú Googlom; šifrovanie závisí od zámku obrazovky, v systéme sa dá záloha vypnúť); dátum narodenia sa nezálohuje. Aplikácia ich nikam inam neposiela a po odinštalovaní sa zmažú. Rovnako len v zariadení (a bez zálohy) si aplikácia pamätá, ktoré položky v sekcii „Novinky“ ste už videli a kedy ste danú verziu prvýkrát spustili — podľa toho sa postupne odhaľujú indície o scéne.</li>
+    <li><strong>Pohybový senzor (voliteľné).</strong> Len ak si v nastaveniach zvolíte ovládanie pohľadu náklonom telefónu, aplikácia číta senzor pohybu, aby podľa neho posunula pohľad na scénu. Údaje sa spracujú okamžite v zariadení, neukladajú sa ani neodosielajú; nevyžaduje to žiadne povolenie.</li>
+    <li><strong>Ťuknutia na tapetu</strong> (ak ich launcher posiela) sa spracujú len v zariadení.</li>
+    <li><strong>Dátum narodenia (voliteľný).</strong> Ak si v nastaveniach zadáte dátum narodenia (rok nie je povinný), aplikácia ho použije len na to, aby v ten deň vyzdobila scénu a na oblohe zaželala všetko najlepšie. Dátum ostáva výhradne v súkromnom úložisku aplikácie vo vašom zariadení — nie je súčasťou presetov ani zdieľaných súborov, neposiela sa nikam a kedykoľvek ho môžete v nastaveniach zmazať.</li>
+    <li><strong>Zdieľanie presetu.</strong> Len keď sami ťuknete na „Zdieľať preset“ alebo „Uložiť do súboru…“, aplikácia vytvorí súbor so vzhľadovými nastaveniami (bez mesta a bez vlastného textu v oblohe) a odovzdá ho aplikácii alebo miestu, ktoré si vyberiete.</li>
   </ul>
 
   <h2>Povolenia</h2>
   <ul>
-    <li><code>INTERNET</code> — používa sa výhradne na stiahnutie predpovede počasia zo služby Open‑Meteo. Aplikácia bez neho beží ďalej, len bez živého počasia.</li>
+    <li><code>INTERNET</code> — používa sa výhradne na stiahnutie predpovede počasia zo služby MET Norway. Aplikácia bez neho beží ďalej, len bez živého počasia.</li>
+    <li>Žiadne ďalšie povolenia (poloha, kamera, mikrofón, kontakty, úložisko, notifikácie) aplikácia nežiada.</li>
   </ul>
 
   <h2>Služby tretích strán</h2>
-  <p>Na počasie sa používa <a href="https://open-meteo.com/" rel="noopener">Open‑Meteo</a> (bezplatné otvorené API).
-  Pri požiadavke na predpoveď mu aplikácia odošle zadaný názov mesta; ako pri každej internetovej požiadavke
-  služba technicky vidí aj IP adresu vášho pripojenia. Open‑Meteo neprevádzkujeme my; ich zásady nájdete na ich stránke.
+  <p>Na počasie sa používa <a href="https://api.met.no/" rel="noopener">MET Norway</a> (Nórsky meteorologický ústav, Locationforecast; údaje pod licenciou
+  <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>). Pri požiadavke na predpoveď mu aplikácia odošle len súradnice mesta
+  zaokrúhlené na 0,01° a názov aplikácie s jej verziou a kontaktom na vývojára (hlavička User‑Agent — MET Norway ju vyžaduje v podmienkach používania, aby sa dalo ozvať pri problémoch); ako pri každej internetovej požiadavke služba technicky vidí aj IP adresu
+  vášho pripojenia. MET Norway neprevádzkujeme my; ich zásady nájdete na ich stránke. Mesto sa hľadá offline v zozname miest
+  <a href="https://www.geonames.org/" rel="noopener">GeoNames</a> (CC BY 4.0), ktorý je súčasťou aplikácie — pri hľadaní sa neposiela nič.
   Aplikácia neposiela dáta žiadnej inej tretej strane.</p>
+
+  <h2>Verzia pre Windows</h2>
+  <p>Verzia pre Windows (tapeta pod ikonami plochy) ukladá nastavenia, stav scény a krátky technický záznam o behu len do súboru v profile používateľa (<code>%APPDATA%\LanternWalk</code>) a na internet nepristupuje vôbec (živé počasie zatiaľ nemá). Nič sa neodosiela ani nezálohuje mimo počítača.</p>
 
   <h2>Deti</h2>
   <p>Aplikácia je vhodná pre všetky vekové kategórie a nezbiera údaje o nikom, vrátane detí.</p>
@@ -62,28 +73,39 @@
   <div class="lang">English version</div>
 
   <h1>Lantern Walk — Privacy Policy</h1>
-  <p class="sub">Live wallpaper for Android · Last updated: 7 September 2026</p>
+  <p class="sub">Live wallpaper for Android and Windows · Last updated: 6 October 2026</p>
 
-  <p>Lantern Walk is a live wallpaper. It does not collect, store, or share any personal data.
-  It has no user accounts, no ads, and no analytics or tracking.</p>
+  <p>Lantern Walk is a live wallpaper. It does not collect any personal data about you and has no user accounts, no ads,
+  and no analytics or tracking. The only outgoing transfer is an optional weather-forecast request (MET Norway) with the
+  coordinates of the <em>chosen city</em> (not your location) — details below.</p>
 
   <h2>What data the app handles</h2>
   <ul>
     <li><strong>No personal data.</strong> The app never asks for your name, email, system location, or a sign‑in.</li>
-    <li><strong>Weather city (optional).</strong> If you enter a city name in settings, the app sends it to Open‑Meteo to fetch the current forecast so the scene reflects real weather. The city name is stored only locally on your device; if you leave it blank, the wallpaper's default city is used.</li>
-    <li><strong>Settings and the "garden".</strong> Your settings and the plants that grow in the scene are stored only locally on your device (app settings and WebView local storage). They never leave your device and are not accessible to anyone else.</li>
+    <li><strong>Weather city.</strong> So the scene reflects real weather, the app looks up the city name from settings (default "Bratislava", you can change it) <em>on your phone</em>, in a city list bundled with the app, and sends MET Norway only the coordinates of <em>that city</em> rounded to 0.01° (about 1 km) — it never sends the city name or your device's location. You can turn live weather off in settings; the app then does not access the internet at all.</li>
+    <li><strong>Settings and scene state.</strong> Your settings, presets, favourite settings, the counter and everything that accumulates in the scene (plants, herbarium, the Collection of finds, the woodpile and so on) are stored only in the app's private storage on your device. Your settings (including the weather city), presets and the wallpaper state may be backed up and moved to a new phone through Google backup (protected by Google; encryption depends on your screen lock, and the backup can be turned off in the system settings); your birth date is not backed up. The app sends them nowhere else, and they are deleted when you uninstall the app. Likewise only on the device (and not backed up), the app remembers which items in the "News" section you have seen and when you first launched a given version — this is what gradually reveals the hints about the scene.</li>
+    <li><strong>Motion sensor (optional).</strong> Only if you choose to steer the view by tilting the phone does the app read the motion sensor to move the view of the scene. The readings are used immediately on the device and are neither stored nor sent; no permission is required.</li>
+    <li><strong>Taps on the wallpaper</strong> (if your launcher delivers them) are handled on the device only.</li>
+    <li><strong>Birthday (optional).</strong> If you enter your birthday in settings (the year is optional), the app uses it only to decorate the scene and wish you a happy birthday in the sky on that day. The date stays solely in the app's private storage on your device — it is not part of presets or shared files, is never sent anywhere, and you can delete it in settings at any time.</li>
+    <li><strong>Sharing a preset.</strong> Only when you tap "Share preset" or "Save to file…" does the app create a file with appearance settings (without the city and without your custom sky text) and hand it to the app or location you pick.</li>
   </ul>
 
   <h2>Permissions</h2>
   <ul>
-    <li><code>INTERNET</code> — used solely to download the weather forecast from Open‑Meteo. The app runs fine without it, just without live weather.</li>
+    <li><code>INTERNET</code> — used solely to download the weather forecast from MET Norway. The app runs fine without it, just without live weather.</li>
+    <li>The app requests no other permissions (location, camera, microphone, contacts, storage, notifications).</li>
   </ul>
 
   <h2>Third‑party services</h2>
-  <p>Weather is provided by <a href="https://open-meteo.com/" rel="noopener">Open‑Meteo</a> (a free open API).
-  When requesting a forecast, the app sends the city name you entered; as with any internet request, the service
-  technically also sees your connection's IP address. We do not operate Open‑Meteo; see their site for their policy.
+  <p>Weather is provided by <a href="https://api.met.no/" rel="noopener">MET Norway</a> (the Norwegian Meteorological Institute, Locationforecast; data under
+  <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>). When requesting a forecast, the app sends only the city's coordinates
+  rounded to 0.01° and the app name with its version and the developer's contact (the User‑Agent header — MET Norway requires it in its terms of service so it can reach us if something goes wrong); as with any internet request, the service technically also sees your
+  connection's IP address. We do not operate MET Norway; see their site for their policy. The city is looked up offline in the
+  <a href="https://www.geonames.org/" rel="noopener">GeoNames</a> city list (CC BY 4.0) that ships with the app — nothing is sent during the lookup.
   The app sends no data to any other third party.</p>
+
+  <h2>Windows version</h2>
+  <p>The Windows version (a wallpaper behind the desktop icons) stores settings, scene state and a short technical run log only in a file in the user profile (<code>%APPDATA%\LanternWalk</code>) and does not access the internet at all (it has no live weather yet). Nothing is sent or backed up outside the computer.</p>
 
   <h2>Children</h2>
   <p>The app is suitable for all ages and collects no data about anyone, including children.</p>
@@ -94,7 +116,7 @@
   <h2>Contact</h2>
   <p>Privacy questions: <a href="mailto:lubosmisovic@gmail.com">lubosmisovic@gmail.com</a></p>
 
-  <footer>Lantern Walk — pixel‑art living wallpaper. This policy covers the Android app only.</footer>
+  <footer>Lantern Walk — pixel‑art living wallpaper. This policy covers the Android and Windows apps.</footer>
 
 </div>
 </body>
