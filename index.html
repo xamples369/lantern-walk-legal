@@ -27,17 +27,18 @@
 <div class="wrap">
 
   <h1>Lantern Walk — Zásady ochrany súkromia</h1>
-  <p class="sub">Živá tapeta pre Android a Windows · Naposledy aktualizované: 7. október 2026</p>
+  <p class="sub">Živá tapeta pre Android a Windows · Naposledy aktualizované: 31. október 2026</p>
 
-  <p>Lantern Walk je živá tapeta. Nezbiera o vás žiadne osobné údaje, nemá používateľské účty, reklamy ani analytické nástroje,
+  <p>Lantern Walk je živá tapeta. Okrem voliteľnej približnej polohy pre počasie (nižšie) o vás nezbiera žiadne osobné údaje, nemá používateľské účty, reklamy ani analytické nástroje,
   ktoré by vás sledovali. Jediný odchádzajúci prenos je voliteľný dopyt na predpoveď počasia (MET Norway) so súradnicami
-  <em>zvoleného mesta</em> (nie vašej polohy) — podrobnosti nižšie.</p>
+  <em>zvoleného mesta</em>. Ak zapnete voliteľnú automatickú polohu, je to mesto najbližšie k vášmu telefónu — jeho súradnice teda prezrádzajú vašu približnú polohu (obec) — podrobnosti nižšie.</p>
 
   <h2>Aké údaje aplikácia spracúva</h2>
   <ul>
-    <li><strong>Žiadne osobné údaje.</strong> Aplikácia od vás nevyžaduje meno, e-mail, polohu zo systému ani prihlásenie.</li>
+    <li><strong>Žiadny účet.</strong> Aplikácia od vás nevyžaduje meno, e-mail ani prihlásenie. Polohu zo systému číta len vtedy, ak si to sami zapnete (pozri „Približná poloha“ nižšie).</li>
     <li><strong>Mesto pre počasie.</strong> Aby scéna reagovala na skutočné počasie, aplikácia si názov mesta z nastavení (predvolene „Bratislava“, môžete ho zmeniť) vyhľadá <em>priamo vo vašom telefóne</em> v zabalenom zozname miest a službe MET Norway pošle len súradnice <em>tohto mesta</em> zaokrúhlené na 0,01° (~1 km) — názov mesta ani polohu vášho zariadenia nikam neodosiela. Živé počasie môžete v nastaveniach vypnúť; potom aplikácia na internet nepristupuje vôbec.</li>
     <li><strong>Nastavenia a stav scény.</strong> Vaše nastavenia, presety, obľúbené nastavenia, počítadlo a to, čo sa v scéne nahromadí (rastliny, herbár, Zbierka nálezov, kôpka dreva a podobne), sa ukladajú výhradne v súkromnom úložisku aplikácie vo vašom zariadení. Nastavenia (vrátane mesta pre počasie), presety a stav tapety sa môžu zálohovať a prenášať na nový telefón cez zálohu Google (chránenú Googlom; šifrovanie závisí od zámku obrazovky, v systéme sa dá záloha vypnúť); dátum narodenia sa nezálohuje. Aplikácia ich nikam inam neposiela a po odinštalovaní sa zmažú. Rovnako len v zariadení (a bez zálohy) si aplikácia pamätá, ktoré položky v sekcii „Novinky“ ste už videli a kedy ste danú verziu prvýkrát spustili — podľa toho sa postupne odhaľujú indície o scéne.</li>
+    <li><strong>Približná poloha (voliteľné, predvolene vypnuté).</strong> Len ak v nastaveniach počasia zapnete „Poloha automaticky“ a systému povolíte <em>približnú</em> polohu, aplikácia si najviac raz za 2 hodiny (a len keď je tapeta viditeľná; kým systém polohu nemá, skúša to znova o 20 minút) prečíta poslednú známu približnú polohu zo systému — bez GPS a bez vlastného vyhľadávania polohy. V telefóne k nej vyberie najbližšie mesto zo zabaleného zoznamu (asi 254 000 miest a obcí) a ďalej pracuje len s ním: službe MET Norway odošle súradnice <em>tohto mesta</em> zaokrúhlené na 0,01°. <strong>Pretože zoznam obsahuje aj malé obce, súradnice najbližšieho mesta prezrádzajú vašu približnú polohu (obec, spravidla v okruhu niekoľkých kilometrov)</strong> — MET Norway tak spolu s IP adresou vášho pripojenia vidí, približne kde ste. Súradnice samotného zariadenia sa nikam neodosielajú ani neukladajú. V telefóne sa uloží len najbližšie mesto — jeho názov, súradnice a čas posledného čítania polohy —, aby tapeta po reštarte nemusela polohu čítať hneď znova; tieto údaje sa nezálohujú do cloudu ani nezdieľajú a po vypnutí prepínača sa mesto zmaže (ostane len čas posledného čítania). Ak povolenie odmietnete alebo ho neskôr odoberiete, prepínač sa vypne a platí ručne zvolené mesto; aplikácia sa na povolenie nepýta opakovane.</li>
     <li><strong>Pohybový senzor (voliteľné).</strong> Len ak si v nastaveniach zvolíte ovládanie pohľadu náklonom telefónu, aplikácia číta senzor pohybu, aby podľa neho posunula pohľad na scénu. Údaje sa spracujú okamžite v zariadení, neukladajú sa ani neodosielajú; nevyžaduje to žiadne povolenie.</li>
     <li><strong>Ťuknutia na tapetu</strong> (ak ich launcher posiela) sa spracujú len v zariadení.</li>
     <li><strong>Dátum narodenia (voliteľný).</strong> Ak si v nastaveniach zadáte dátum narodenia (rok nie je povinný), aplikácia ho použije len na to, aby v ten deň vyzdobila scénu a na oblohe zaželala všetko najlepšie. Dátum ostáva výhradne v súkromnom úložisku aplikácie vo vašom zariadení — nie je súčasťou presetov ani zdieľaných súborov, neposiela sa nikam a kedykoľvek ho môžete v nastaveniach zmazať.</li>
@@ -48,7 +49,8 @@
   <h2>Povolenia</h2>
   <ul>
     <li><code>INTERNET</code> — používa sa výhradne na stiahnutie predpovede počasia zo služby MET Norway. Aplikácia bez neho beží ďalej, len bez živého počasia.</li>
-    <li>Žiadne ďalšie povolenia (poloha, kamera, mikrofón, kontakty, úložisko, notifikácie) aplikácia nežiada.</li>
+    <li><code>ACCESS_COARSE_LOCATION</code> (približná poloha) — voliteľné; systém sa na ňu spýta až vtedy, keď v nastaveniach zapnete „Poloha automaticky“. Používa sa výhradne na výber najbližšieho mesta pre predpoveď počasia; poloha zariadenia sa spracuje len v telefóne, von ide len súradnica najbližšieho mesta (prezrádza približnú polohu — obec, pozri vyššie). Presnú polohu ani polohu na pozadí aplikácia nikdy nežiada. Bez povolenia aplikácia beží ďalej s ručne zvoleným mestom.</li>
+    <li>Žiadne ďalšie povolenia (kamera, mikrofón, kontakty, úložisko, notifikácie) aplikácia nežiada.</li>
   </ul>
 
   <h2>Služby tretích strán</h2>
@@ -63,7 +65,7 @@
   <p>Verzia pre Windows (tapeta pod ikonami plochy) ukladá nastavenia, stav scény a krátky technický záznam o behu len do súboru v profile používateľa (<code>%APPDATA%\LanternWalk</code>) a na internet nepristupuje vôbec (živé počasie zatiaľ nemá). Raz za deň si aplikácia ukladá kópiu stavu sveta (posledných 7) do <code>%APPDATA%\LanternWalk\backup</code>. Nič sa neodosiela ani nezálohuje mimo počítača.</p>
 
   <h2>Deti</h2>
-  <p>Aplikácia je vhodná pre všetky vekové kategórie a nezbiera údaje o nikom, vrátane detí.</p>
+  <p>Aplikácia je vhodná pre všetky vekové kategórie a nezbiera údaje o nikom, vrátane detí — jedinou výnimkou je voliteľná približná poloha pre počasie (predvolene vypnutá, popísaná vyššie).</p>
 
   <h2>Zmeny týchto zásad</h2>
   <p>Ak sa zásady zmenia, aktualizujeme túto stránku a upravíme dátum vyššie.</p>
@@ -74,17 +76,18 @@
   <div class="lang">English version</div>
 
   <h1>Lantern Walk — Privacy Policy</h1>
-  <p class="sub">Live wallpaper for Android and Windows · Last updated: 7 October 2026</p>
+  <p class="sub">Live wallpaper for Android and Windows · Last updated: 31 October 2026</p>
 
-  <p>Lantern Walk is a live wallpaper. It does not collect any personal data about you and has no user accounts, no ads,
+  <p>Lantern Walk is a live wallpaper. Apart from the optional approximate location for weather (below), it does not collect any personal data about you and has no user accounts, no ads,
   and no analytics or tracking. The only outgoing transfer is an optional weather-forecast request (MET Norway) with the
-  coordinates of the <em>chosen city</em> (not your location) — details below.</p>
+  coordinates of the <em>chosen city</em>. If you turn on the optional automatic location, that is the city nearest to your phone — so its coordinates reveal your approximate location (town or village) — details below.</p>
 
   <h2>What data the app handles</h2>
   <ul>
-    <li><strong>No personal data.</strong> The app never asks for your name, email, system location, or a sign‑in.</li>
+    <li><strong>No account.</strong> The app never asks for your name, email, or a sign‑in. It reads the system location only if you turn that on yourself (see "Approximate location" below).</li>
     <li><strong>Weather city.</strong> So the scene reflects real weather, the app looks up the city name from settings (default "Bratislava", you can change it) <em>on your phone</em>, in a city list bundled with the app, and sends MET Norway only the coordinates of <em>that city</em> rounded to 0.01° (about 1 km) — it never sends the city name or your device's location. You can turn live weather off in settings; the app then does not access the internet at all.</li>
     <li><strong>Settings and scene state.</strong> Your settings, presets, favourite settings, the counter and everything that accumulates in the scene (plants, herbarium, the Collection of finds, the woodpile and so on) are stored only in the app's private storage on your device. Your settings (including the weather city), presets and the wallpaper state may be backed up and moved to a new phone through Google backup (protected by Google; encryption depends on your screen lock, and the backup can be turned off in the system settings); your birth date is not backed up. The app sends them nowhere else, and they are deleted when you uninstall the app. Likewise only on the device (and not backed up), the app remembers which items in the "News" section you have seen and when you first launched a given version — this is what gradually reveals the hints about the scene.</li>
+    <li><strong>Approximate location (optional, off by default).</strong> Only if you turn on "Location automatically" in the weather settings and grant the system's <em>approximate</em> location permission does the app read the last known approximate location from the system, at most once every 2 hours and only while the wallpaper is visible (while the system has no location yet, it tries again after 20 minutes) — no GPS and no location requests of its own. On the phone it picks the nearest city from the bundled list (about 254,000 cities, towns and villages) and works only with that city: MET Norway receives the coordinates of <em>that city</em> rounded to 0.01°. <strong>Because the list includes small villages, the coordinates of the nearest city reveal your approximate location (the town or village, usually within a few kilometres)</strong> — together with your connection's IP address, MET Norway can therefore see roughly where you are. The coordinates of the device itself are never sent or stored. Only the nearest city is stored on the phone — its name, its coordinates and the time of the last location read — so the wallpaper does not have to read the location again right after a restart; this data is not backed up to the cloud or shared, and turning the switch off deletes the city (only the time of the last read remains). If you deny or later revoke the permission, the switch turns off and the manually chosen city applies; the app does not keep asking.</li>
     <li><strong>Motion sensor (optional).</strong> Only if you choose to steer the view by tilting the phone does the app read the motion sensor to move the view of the scene. The readings are used immediately on the device and are neither stored nor sent; no permission is required.</li>
     <li><strong>Taps on the wallpaper</strong> (if your launcher delivers them) are handled on the device only.</li>
     <li><strong>Birthday (optional).</strong> If you enter your birthday in settings (the year is optional), the app uses it only to decorate the scene and wish you a happy birthday in the sky on that day. The date stays solely in the app's private storage on your device — it is not part of presets or shared files, is never sent anywhere, and you can delete it in settings at any time.</li>
@@ -95,7 +98,8 @@
   <h2>Permissions</h2>
   <ul>
     <li><code>INTERNET</code> — used solely to download the weather forecast from MET Norway. The app runs fine without it, just without live weather.</li>
-    <li>The app requests no other permissions (location, camera, microphone, contacts, storage, notifications).</li>
+    <li><code>ACCESS_COARSE_LOCATION</code> (approximate location) — optional; the system asks for it only when you turn on "Location automatically" in settings. It is used solely to pick the nearest city for the weather forecast; the device location is handled only on the phone and only the nearest city's coordinates go out (they reveal your approximate location — the town or village, see above). The app never requests precise or background location. Without the permission the app keeps running with the manually chosen city.</li>
+    <li>The app requests no other permissions (camera, microphone, contacts, storage, notifications).</li>
   </ul>
 
   <h2>Third‑party services</h2>
@@ -110,7 +114,7 @@
   <p>The Windows version (a wallpaper behind the desktop icons) stores settings, scene state and a short technical run log only in a file in the user profile (<code>%APPDATA%\LanternWalk</code>) and does not access the internet at all (it has no live weather yet). Once a day the app keeps a copy of the world state (the last 7) in <code>%APPDATA%\LanternWalk\backup</code>. Nothing is sent or backed up outside the computer.</p>
 
   <h2>Children</h2>
-  <p>The app is suitable for all ages and collects no data about anyone, including children.</p>
+  <p>The app is suitable for all ages and collects no data about anyone, including children — the only exception is the optional approximate location for weather (off by default, described above).</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, we will update this page and revise the date above.</p>
