@@ -62,7 +62,7 @@
   Aplikácia neposiela dáta žiadnej inej tretej strane.</p>
 
   <h2>Verzia pre Windows</h2>
-  <p>Verzia pre Windows (tapeta pod ikonami plochy) ukladá nastavenia, stav scény a krátky technický záznam o behu len do súboru v profile používateľa (<code>%APPDATA%\LanternWalk</code>) a na internet nepristupuje vôbec (živé počasie zatiaľ nemá). Raz za deň si aplikácia ukladá kópiu stavu sveta (posledných 7) do <code>%APPDATA%\LanternWalk\backup</code>. Nič sa neodosiela ani nezálohuje mimo počítača.</p>
+  <p>Verzia pre Windows (tapeta pod ikonami plochy) ukladá nastavenia, stav scény a krátky technický záznam o behu len do súboru v profile používateľa (<code>%APPDATA%\LanternWalk</code>) a na internet pristupuje len kvôli živému počasiu: rovnako ako verzia pre Android posiela službe MET Norway (popísané vyššie) len súradnice zvoleného mesta zaokrúhlené na 0,01° a názov aplikácie s verziou; polohu počítača nezisťuje (mesto sa vyberá v nastaveniach). Bez pripojenia beží ďalej, len bez živého počasia. Raz za deň si aplikácia ukladá kópiu stavu sveta (posledných 7) do <code>%APPDATA%\LanternWalk\backup</code>. Nič sa neodosiela ani nezálohuje mimo počítača.</p>
 
   <h2>Deti</h2>
   <p>Aplikácia je vhodná pre všetky vekové kategórie a nezbiera údaje o nikom, vrátane detí — jedinou výnimkou je voliteľná približná poloha pre počasie (predvolene vypnutá, popísaná vyššie).</p>
@@ -111,7 +111,7 @@
   The app sends no data to any other third party.</p>
 
   <h2>Windows version</h2>
-  <p>The Windows version (a wallpaper behind the desktop icons) stores settings, scene state and a short technical run log only in a file in the user profile (<code>%APPDATA%\LanternWalk</code>) and does not access the internet at all (it has no live weather yet). Once a day the app keeps a copy of the world state (the last 7) in <code>%APPDATA%\LanternWalk\backup</code>. Nothing is sent or backed up outside the computer.</p>
+  <p>The Windows version (a wallpaper behind the desktop icons) stores settings, scene state and a short technical run log only in a file in the user profile (<code>%APPDATA%\LanternWalk</code>) and accesses the internet only for live weather: like the Android version, it sends MET Norway (described above) only the coordinates of the chosen city rounded to 0.01° and the app name with its version; it does not determine the computer's location (the city is chosen in the settings). Without a connection it keeps running, just without live weather. Once a day the app keeps a copy of the world state (the last 7) in <code>%APPDATA%\LanternWalk\backup</code>. Nothing is sent or backed up outside the computer.</p>
 
   <h2>Children</h2>
   <p>The app is suitable for all ages and collects no data about anyone, including children — the only exception is the optional approximate location for weather (off by default, described above).</p>
